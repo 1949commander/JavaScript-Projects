@@ -26,3 +26,20 @@ function Car_Function() {
     }
     document.getElementById("Output").innerHTML = Car_Output;
 }
+
+function Hello_World_Function() {
+    var A = document.getElementsByClassName("Click");
+    A[0].innerHTML = "The text has changed!";
+}
+
+function Grad_Function() {
+    var c = document.getElementById("ID_Name");
+    var ctx = c.getContext("2d");
+// Create gradient
+    var grd = ctx.createLinearGradient(0,0,250,0);
+        grd.addColorStop(0,"blue");
+        grd.addColorStop(1,"white");
+//Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0,0,500,250);
+}
